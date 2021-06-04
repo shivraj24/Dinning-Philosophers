@@ -25,7 +25,7 @@ void* Philosophers(void *arg)
 
     printstatus();
 
-    sem_wait(&mutex);
+     sem_wait(&mutex);
     sem_wait(&chopsticks[num]);
     sleep(1);
     sem_wait(&chopsticks[(num+1)%5]);
